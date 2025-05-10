@@ -1,4 +1,4 @@
-print("hello world")
+print("bye world")
 # git inid - инициализация репозитория 
 # git remote add origin https://github.com/hank4354/practice-2025-1
 # git status - проверка на добавление (необязательно)

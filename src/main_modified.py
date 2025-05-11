@@ -46,7 +46,7 @@ async def start_bot():
     """Асинхронная функция для запуска бота."""
     
     # Здесь напрямую указываем токен бота
-    TOKEN = "8014461297:AAH4iKyUIzLv97LQpdBDPidDBjH-z9M_U4E"
+    TOKEN = "7567363652:AAGGhpwcJicTMOqj5u7W2GfURnfL7uZZQQw"
     
     if not TOKEN:
         logger.error("Не задан токен бота!")

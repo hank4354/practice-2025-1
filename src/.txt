@@ -1,0 +1,19 @@
+main.py и main_modified.py - оригинальный код бота
+book_manager.py - код для управления данными книг
+handlers.py - обработчики сообщений и команд
+keyboards.py - код для создания клавиатур
+states.py - определения состояний для диалогов
+telebot_books.py - новый рабочий бот с библиотекой pyTelegramBotAPI
+
+/usr/local/bin/python3 "/Users/chef_hank/Desktop/проектная практика/src/telebot_books.py"
+запуск ^
+
+# 0) git branch - узнать что писать вместо main
+# 1) git pull origin main — это подгрузить актулаьные изменения шаг 0
+# 2) git add . - положил продукты в корзину
+# 3) git commit -m "блабла" - комментарий
+# 4) git push origin main - добавление в репозеторий 
+# git init - инициализация репозитория 
+# git remote add origin https://github.com/hank4354/practice-2025-1
+# git status - проверка на добавление (необязательно)
+# git remote -v - проверить в каком репозитории

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал - Маркетплейс курсов ДПО Мосполитеха</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/mospolytech-logo.svg" alt="Логотип ДПО Мосполитех" class="logo-rotate">
+                <div class="logo-text">ДПО <span>Мосполитех</span></div>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-item">Главная</a>
+                <a href="about.html" class="nav-item">О проекте</a>
+                <a href="team.html" class="nav-item">Участники</a>
+                <a href="journal.html" class="nav-item active">Журнал</a>
+                <a href="resources.html" class="nav-item">Ресурсы</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный раздел -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in">Журнал проекта</h1>
+            <p class="fade-in">В данном разделе отражены ключевые этапы и значимые моменты работы команды над проектом. Это позволяет наглядно продемонстрировать прогресс, зафиксировать принятые решения и показать, как поэтапно создавался итоговый продукт.</p>
+        </div>
+    </section>
+
+    <!-- Журнал -->
+    <section class="section">
+        <div class="container">
+            <!-- Пост 1 -->
+            <div class="journal-post hover-shadow">
+                <h2 class="journal-title">Знакомство с проектом и постановка задач</h2>
+                <p>На момент нашего подключения к проекту маркетплейса курсов ДПО уже существовала базовая концепция. В начале работы мы детально изучили текущее состояние платформы, уточнили её цели и обозначили круг задач для нашего этапа участия. В рамках команды были распределены роли, сформирован перечень задач и составлен план дальнейших действий.</p>
+                <div style="margin: 1.5rem 0">
+                    <img src="assets/journal/цпд.png?v=1" alt="Схема проекта" style="width: 100%; max-width: 1100px; height: auto; display: block; margin: 0 auto;">
+                </div>
+            </div>
+            
+            <!-- Пост 2 -->
+            <div class="journal-post hover-shadow">
+                <h2 class="journal-title">Исследование и аналитика</h2>
+                <p>На этом этапе мы выполнили детальный аудит действующей версии сайта, выявив слабые места в его структуре, подаче контента и UX-решениях. Одновременно проанализировали успешные кейсы аналогичных платформ, чтобы перенять лучшие практики и минимизировать потенциальные ошибки. Проведённый анализ стал основой для обоснованных проектных решений.</p>
+                <div style="margin: 1.5rem 0">
+                    <img src="assets/journal/post2.png?v=1" alt="Аналитика" style="width: 100%; max-width: 1050px; height: auto; display: block; margin: 0 auto;">
+                </div>
+            </div>
+            
+            <!-- Пост 3 -->
+            <div class="journal-post hover-shadow">
+                <h2 class="journal-title">Работа с пользовательским сценарием</h2>
+                <p>Ключевым направлением нашей работы стало проектирование пользовательского опыта, в частности — создание инструмента для подбора курсов. Мы разработали анкету, которая помогает определить интересы пользователя и на их основе сформировать персонализированную подборку программ. Это решение значительно повысило практическую ценность платформы и сделало навигацию более осмысленной.</p>
+                <div style="margin: 1.5rem 0">
+                    <img src="assets/journal/post3.png?v=1" alt="Пользовательский сценарий" style="width: 100%; max-width: 1050px; height: auto; display: block; margin: 0 auto;">
+                </div>
+            </div>
+            
+            <!-- Пост 4 -->
+            <div class="journal-post hover-shadow">
+                <h2 class="journal-title">Разработка серверной части и реализация API</h2>
+                <p>На данном этапе разработчики бэкенда сосредоточились на создании и внедрении основных API-функций. Были реализованы эндпоинты для поиска и фильтрации курсов, а также для обработки запросов пользователей и записи на программы. Параллельно велась работа по проектированию моделей данных, анализу нефункциональных требований и оптимизации клиент-серверного взаимодействия. Эти меры заложили фундамент для стабильной работы платформы и её будущего масштабирования.</p>
+                <div style="margin: 1.5rem 0">
+                    <img src="assets/journal/post4.png?v=1" alt="Серверная архитектура" style="width: 100%; max-width: 1050px; height: auto; display: block; margin: 0 auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/mospolytech-logo.svg" alt="Логотип ДПО Мосполитех">
+                        <div style="color: white;">ДПО Мосполитех</div>
+                    </div>
+                    <p>Маркетплейс курсов дополнительного профессионального образования Московского политехнического университета</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="team.html">Участники</a></li>
+                        <li><a href="journal.html">Журнал</a></li>
+                        <li><a href="resources.html">Ресурсы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Большая Семеновская, 38</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 223-05-23</li>
+                        <li><i class="fas fa-envelope"></i> dpo@mospolytech.ru</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Социальные сети</h4>
+                    <ul>
+                        <li><a href="https://t.me/dpoMPU" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Маркетплейс курсов ДПО Мосполитеха. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

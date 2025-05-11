@@ -1,11 +1,4 @@
-# git pull origin main — это подгрузить актулаьные изменения шаг 0
-# git init - инициализация репозитория 
-# git remote add origin https://github.com/hank4354/practice-2025-1
-# git status - проверка на добавление (необязательно)
-# git add . - положил продукты в корзину
-# git commit -m "блабла" - комментарий
-# git push origin main - добавление в репозеторий 
-# git remote -v - проверить в каком репозитории
+# /usr/local/bin/python3 "/Users/chef_hank/Desktop/проектная практика/src/main_modified.py"
 
 import logging
 import os
@@ -17,6 +10,7 @@ from telegram.ext import (
     CallbackQueryHandler,
     ConversationHandler,
     filters,
+    ContextTypes,
 )
 
 from handlers import (
@@ -48,12 +42,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def main():
-    """Запуск бота."""
-    # Задаем токен напрямую в коде
-    TOKEN = "7567363652:AAGGhpwcJicTMOqj5u7W2GfURnfL7uZZQQw"
+async def start_bot():
+    """Асинхронная функция для запуска бота."""
     
-    # Проверка всё равно есть, но она не должна выполниться, т.к. токен задан
+    # Здесь напрямую указываем токен бота
+    TOKEN = "8014461297:AAH4iKyUIzLv97LQpdBDPidDBjH-z9M_U4E"
+    
     if not TOKEN:
         logger.error("Не задан токен бота!")
         return
@@ -102,11 +96,24 @@ def main():
     application.add_handler(CallbackQueryHandler(button_handler))
 
     # Запуск бота с отключением вебхуков и использованием поллинга
-    application.run_polling(
+    await application.initialize()
+    await application.start()
+    await application.updater.start_polling(
         drop_pending_updates=True,
-        allowed_updates=Update.ALL_TYPES,
-        stop_signals=None
+        allowed_updates=Update.ALL_TYPES
     )
+    
+    # Логирование успешного запуска
+    logger.info("Бот успешно запущен")
+    
+    # Ждем, пока бот не будет остановлен (Ctrl+C)
+    await application.updater.stop()
+    await application.stop()
+
+def main():
+    """Запуск бота."""
+    import asyncio
+    asyncio.run(start_bot())
 
 if __name__ == "__main__":
     main()
